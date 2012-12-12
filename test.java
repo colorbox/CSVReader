@@ -6,12 +6,24 @@ import java.util.ArrayList;
 
 
 public class test{
+
+    public static void printList(ArrayList<ArrayList> list){
+	for(int i=0;i<list.size();i++){
+	    for(int j=0;j<list.get(i).size();j++){
+	     	System.out.print((list.get(i).get(j))+",");
+	    }
+	    System.out.println();
+	}
+    }
+
     public static void main(String[] args){
 	ArrayList test = FileLoader.loadFile("test.csv");
+	ArrayList Loaded = new ArrayList();
 	for(int i=0;i<test.size();i++) {
-	    System.out.println(test.get(i));
+	    ArrayList Temp = LineReader.lineRead((String)test.get(i));
+	    Loaded.add(Temp);
 	}
-	
+	printList(Loaded);
     }
 
 
