@@ -1,0 +1,8 @@
+usage :
+
+ArrayList LoadVariable = CSVReader.readCSV("FILEPATH");
+
+
+
+-----
+CSVReader.readCSV returns douly String ArrayList.
