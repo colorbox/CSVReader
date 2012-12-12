@@ -17,12 +17,15 @@ public class test{
     }
 
     public static void main(String[] args){
+	/*
 	ArrayList test = FileLoader.loadFile("test.csv");
-	ArrayList Loaded = new ArrayList();
 	for(int i=0;i<test.size();i++) {
 	    ArrayList Temp = LineReader.lineRead((String)test.get(i));
 	    Loaded.add(Temp);
 	}
+	*/
+
+	ArrayList Loaded = CSVReader.readCSV("test.csv");
 	printList(Loaded);
     }
 
