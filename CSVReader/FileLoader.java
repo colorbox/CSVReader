@@ -19,7 +19,7 @@ public class FileLoader{
 	    br =  new BufferedReader(new FileReader(csv));
 	    String line;
 	    while ((line = br.readLine()) != null) {
-		System.out.println(line);
+		//System.out.println(line);
 		LineList.add(line);
 	    }
 

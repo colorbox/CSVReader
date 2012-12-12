@@ -21,7 +21,7 @@ public class LineReader{
 	    //arrElement.add( Integer.parseInt(elem) );
 	    StringList.add( elem );
 	}
-	return StringList;
+	return (ArrayList)StringList;
     }
 
 }
