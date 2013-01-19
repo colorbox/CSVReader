@@ -14,7 +14,7 @@ public class LineReader{
 
     public static ArrayList lineRead(String Line){
 	StringTokenizer st = new StringTokenizer(Line, ",");
-	ArrayList StringList = new ArrayList<String>();
+	ArrayList<String> StringList = new ArrayList<String>();
 	while (st.hasMoreTokens()) {
 	    //1行の各要素をリストに格納
 	    String elem=st.nextToken();
